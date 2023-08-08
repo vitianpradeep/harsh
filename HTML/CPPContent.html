@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Content.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CW - CPP Explore</title>
+    <script>
+        function markComplete(checkbox) {
+            var row = checkbox.parentNode.parentNode;
+            if (checkbox.checked) {
+                row.classList.add("table-success");
+            } else {
+                row.classList.remove("table-success");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">CW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="News.html">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Documentations
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://cppguide.readthedocs.io/en/latest/" target="_blank">C++
+                            Basic
+                            Tutorial</a>
+                        <a class="dropdown-item" href="https://www.tutorialspoint.com/java/index.htm"
+                            target="_blank">Java Basic
+                            Tutorial</a>
+                        <a class="dropdown-item" href="https://docs.python.org/3/tutorial/" target="_blank">Python Basic
+                            Tutoral</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://developer.mozilla.org/en-US/">Web Development</a>
+                        <a class="dropdown-item" href="#" target="_blank">Mobile Development (BETA)</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <div class="shoppingkart">
+                <a href="Kart.html"><img src="../images/SB.png" id="kartimg" alt="kart"></a>
+            </div>
+            <div class="ls">
+                <button class="btn btn-danger" onclick="window.location.href = 'LoginPage.html';">Log In</button>
+                <button class="btn btn-danger" onclick="window.location.href = 'SignUpPage.html';">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <h2>CPP Content</h2>
+    <div class="container">
+        <button class="BuyNow btn btn-success w-100" onclick="window.location.href = 'Kart.html';">Enroll
+            Now</button>
+    </div>
+    <div class="container my-4">
+        <table class=" table table-striped">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Session No.</th>
+                    <th>Module Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>1</td>
+                    <td>Welcome to coding</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>2</td>
+                    <td>Flowcharts and pseudocodes</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>3</td>
+                    <td>Operators and expressions</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>4</td>
+                    <td>Build-up logical thinking</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>5</td>
+                    <td>STL in C++</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>6</td>
+                    <td>Basic Maths</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>7</td>
+                    <td>Arrays</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>8</td>
+                    <td>Sorting</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>9</td>
+                    <td>Searching</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>10</td>
+                    <td>Strings</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>11</td>
+                    <td>Linked List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>12</td>
+                    <td>Recursion</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>13</td>
+                    <td>Bit Manipulation</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>14</td>
+                    <td>Stack and queues</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>15</td>
+                    <td>Sliding window theorem</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>16</td>
+                    <td>Heaps</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>17</td>
+                    <td>Greedy algorithm</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>18</td>
+                    <td>Binary trees</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>19</td>
+                    <td>Binary search trees</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>20</td>
+                    <td>Graphs</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>21</td>
+                    <td>Dynamic programming</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="markComplete(this)"></td>
+                    <td>22</td>
+                    <td>Tries</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <footer
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-bottom border-">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">© 2023, Course Wallah</span>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+</html>

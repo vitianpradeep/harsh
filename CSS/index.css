@@ -1,0 +1,42 @@
+.ls {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ls a {
+  text-decoration: none;
+  color: white;
+}
+.ls .Profile {
+  background-color: black;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+#kartimg {
+  height: 32px;
+  width: 32px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.headline {
+  text-align: center;
+}
+
+.Explore {
+  border-radius: 20px;
+  outline: 3px solid black;
+  outline-offset: 3px;
+}
+.navbar-brand {
+  font-family: Bebas Neue;
+}
+
+#carousels {
+  border: 3px solid black;
+}
+.combo {
+  border: 5px solid black;
+  outline: 5px solid black;
+  outline-offset: 4px;
+}
